@@ -2,7 +2,12 @@
 - hosts: all
   become: yes
   tasks:
-  - name: firs template task
+  - name: first template task
     template:
       src: firstjinja.j2
       dest: /home/ansible/first
+  - name: second template task
+    template:
+      src: secondjinja.j2
+      dest: /home/ansible/second
+      
