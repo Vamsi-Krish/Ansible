@@ -1,2 +1,4 @@
 ---
 username: I Don't Know
+permsize: 256
+heapsize: 512
