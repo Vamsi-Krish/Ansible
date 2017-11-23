@@ -17,6 +17,7 @@
     when: cmd_content.stderr != ""
   - debug:
       msg: "System {{ inventory_hostname }} has uuid {{ ansible_product_uuid }}" 
+  vars_prompt:
   - name: "some_password"
     prompt: "Enter password"
     private: yes
